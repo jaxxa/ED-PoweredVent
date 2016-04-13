@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ED-PoweredVent</name>
+	<author>Jaxxa</author>
+	<url>https://ludeon.com/forums/index.php?topic=15606.0</url>
+	<description>
+	Requires: ED-Core
+Adds a Vent System that allows you to Equalise the temperature between two Rooms.
+Uses a modified cooler graphic, does not matter what direction it is placed. Power it on to equalise the temperature between two rooms, power it off to keep the temperature separate. Made out of Stuff, has the same health as a wall made from that stuff. Except for the power switch none of the buttons will do anything.
+	</description>
+</ModMetaData>
