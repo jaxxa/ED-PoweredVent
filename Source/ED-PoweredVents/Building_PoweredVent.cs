@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Enhanced_Development.Temperature
 {
-    public class Building_Vent : RimWorld.Building_Vent
+    public class Building_PoweredVent : RimWorld.Building_Vent
     {
 
         CompPowerTrader power;
@@ -65,7 +65,7 @@ namespace Enhanced_Development.Temperature
 
         private void Equalize(Room r, float targetTemp)
         {
-            float num = Mathf.Abs(r.Temperature - targetTemp) * 0.25f;
+            float num = Mathf.Abs(r.Temperature - targetTemp) * 0.25f * this.m_PowerLevel;
             if ((double)targetTemp < (double)r.Temperature)
             {
                 r.Temperature = Mathf.Max(targetTemp, r.Temperature - num);
@@ -133,7 +133,7 @@ namespace Enhanced_Development.Temperature
 
         private void IncreasePower()
         {
-            if (this.m_PowerLevel < Building_Vent.POWER_LEVEL_MAX)
+            if (this.m_PowerLevel < Building_PoweredVent.POWER_LEVEL_MAX)
             {
                 this.m_PowerLevel += 1;
             }
@@ -142,7 +142,7 @@ namespace Enhanced_Development.Temperature
 
         private void DecreasePower()
         {
-            if (this.m_PowerLevel > Building_Vent.POWER_LEVEL_MIN)
+            if (this.m_PowerLevel > Building_PoweredVent.POWER_LEVEL_MIN)
             {
                 this.m_PowerLevel -= 1;
             }
@@ -161,7 +161,7 @@ namespace Enhanced_Development.Temperature
 
         public void updatePowerUsage()
         {
-            this.power.PowerOutput = this.m_PowerLevel * 100;
+            this.power.PowerOutput = this.m_PowerLevel * -1 * 100;
         }
 
         //Saving game

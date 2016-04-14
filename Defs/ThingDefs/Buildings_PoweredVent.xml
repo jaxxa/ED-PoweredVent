@@ -19,7 +19,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>PoweredVent</defName>
 		<label>PoweredVent</label>
-		<thingClass>Enhanced_Development.Temperature.Building_Vent</thingClass>
+		<thingClass>Enhanced_Development.Temperature.Building_PoweredVent</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
