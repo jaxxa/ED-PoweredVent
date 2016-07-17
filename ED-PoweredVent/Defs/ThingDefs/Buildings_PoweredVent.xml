@@ -19,7 +19,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>PoweredVent</defName>
 		<label>PoweredVent</label>
-		<thingClass>Enhanced_Development.Temperature.Building_PoweredVent</thingClass>
+		<thingClass>EnhancedDevelopment.PoweredVents.Building_Vent_PoweredVent</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -30,7 +30,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<altitudeLayer>BuildingTall</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>

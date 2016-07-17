@@ -6,9 +6,10 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 
-namespace Enhanced_Development.Temperature
+namespace EnhancedDevelopment.PoweredVents
 {
-    public class Building_PoweredVent : RimWorld.Building_Vent
+    [StaticConstructorOnStartup]
+    public class Building_Vent_PoweredVent : RimWorld.Building_Vent
     {
 
         CompPowerTrader power;
@@ -46,8 +47,8 @@ namespace Enhanced_Development.Temperature
         {
             if (this.power.PowerOn)
             {
-                IntVec3 loc1 = this.Position + Gen.RotatedBy(IntVec3.South, this.Rotation);
-                IntVec3 loc2 = this.Position + Gen.RotatedBy(IntVec3.North, this.Rotation);
+                IntVec3 loc1 = this.Position + IntVec3Utility.RotatedBy(IntVec3.South, this.Rotation);
+                IntVec3 loc2 = this.Position + IntVec3Utility.RotatedBy(IntVec3.North, this.Rotation);
                 Room room1 = GridsUtility.GetRoom(loc1);
                 if (room1 == null)
                     return;
