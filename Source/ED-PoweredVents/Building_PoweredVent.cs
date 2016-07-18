@@ -134,7 +134,7 @@ namespace EnhancedDevelopment.PoweredVents
 
         private void IncreasePower()
         {
-            if (this.m_PowerLevel < Building_PoweredVent.POWER_LEVEL_MAX)
+            if (this.m_PowerLevel < Building_Vent_PoweredVent.POWER_LEVEL_MAX)
             {
                 this.m_PowerLevel += 1;
             }
@@ -143,7 +143,7 @@ namespace EnhancedDevelopment.PoweredVents
 
         private void DecreasePower()
         {
-            if (this.m_PowerLevel > Building_PoweredVent.POWER_LEVEL_MIN)
+            if (this.m_PowerLevel > Building_Vent_PoweredVent.POWER_LEVEL_MIN)
             {
                 this.m_PowerLevel -= 1;
             }

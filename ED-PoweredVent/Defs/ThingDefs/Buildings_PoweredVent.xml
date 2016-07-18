@@ -70,7 +70,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<designationHotKey>P</designationHotKey>
 	</ThingDef>
 
 </Defs>
