@@ -29,16 +29,18 @@ namespace EnhancedDevelopment.PoweredVents
 
         private const float EqualizationPercentPerTickRare = 0.25f;
 
-        public override void SpawnSetup()
+        static Building_Vent_PoweredVent()
         {
-            base.SpawnSetup();
-
             UI_POWER_UP = ContentFinder<Texture2D>.Get("UI/PowerUp", true);
             UI_POWER_UP_DISABLED = ContentFinder<Texture2D>.Get("UI/PowerUp-BW", true);
 
             UI_POWER_DOWN = ContentFinder<Texture2D>.Get("UI/PowerDown", true);
             UI_POWER_DOWN_DISABLED = ContentFinder<Texture2D>.Get("UI/PowerDown-BW", true);
+        }
 
+        public override void SpawnSetup()
+        {
+            base.SpawnSetup();
 
             this.power = base.GetComp<CompPowerTrader>();
         }

@@ -4,7 +4,11 @@
 	<targetVersion>0.14.1234</targetVersion>
 	<author>Jaxxa</author>
 	<url>https://ludeon.com/forums/index.php?topic=18995.0</url>
-	<description>
+	<description>Version: 02.00.01
+Discussion, Non Steam Downloads and GitHub Repositories of this mod is available at: https://ludeon.com/forums/index.php?topic=18995
+Please Use that Thread for Discussion / Feedback that would like me to reply to. 
+Ideally Bugs should be logged on GitHub although in the discussion thread is also fine.
+
 Adds a Vent System that allows you to Equalise the temperature between two Rooms. Power it on to equalise the temperature between two rooms, power it off to keep the temperature separate. Made out of Stuff, has the same health as a wall made from that stuff.
 	</description>
 </ModMetaData>
